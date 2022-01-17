@@ -1,0 +1,534 @@
+/* Google Font API */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Patua+One&display=swap');
+
+
+/* =================================================================================
+                    Color Code and General Body Styling
+   ================================================================================= */
+:root{
+  --dark-green:#146356;
+  --light-green:#3E8E7E;
+  --yellow:#FABB51;
+  --ivory:#FAEDC6;
+}
+*{
+  box-sizing:border-box;
+  margin:0;
+}
+body{
+  overflow-x: hidden;
+  background-color: var(--ivory);
+  display:flex;
+  flex-direction:column;
+  font-family: 'Lato', sans-serif;
+}
+
+/* =================================================================================
+                    Styling of Header starts
+   ================================================================================= */
+
+
+header{
+  display:grid;
+  grid-template-columns: 45% 55%;
+}
+
+/* Left Column Styling */
+.column-1{
+  height: 95vh;
+  
+}
+
+.logo-container{
+  padding:40px 70px;
+}
+
+.logo img{
+  height: 100px;
+  width: 100px;
+}
+
+.caption{
+    padding: 50px 5px 10px 80px;
+  }
+  .caption-title{
+    width:80%;
+    font-family: 'Patua One', cursive;
+    letter-spacing: 4px;
+    font-size: 56px;
+    color: var(--dark-green);
+  }
+  
+  .caption p{
+      padding: 20px 10px 20px 10px;
+      line-height: 1.8;
+  }
+  
+  .caption span{
+      padding-left: 20px;
+  }
+  
+  .donate1{
+      height: 40px;
+      width: max-content;
+      background-color: var(--dark-green);
+      color: #fff;
+      border:0;
+      padding: 15px;
+      line-height: 10px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      transition: transform ease-in-out;
+  }
+  .donate1:hover{
+      transform: scale(0.95);
+  }
+  
+  button:active{
+      outline: none;
+  }
+  
+
+  /* Styling of Right Column */
+
+.column-2{
+  background-color: var(--yellow);
+  height: 95vh;
+  position: relative;
+}
+
+
+/* Navbar */
+.nav-menu{
+  float:right;
+  padding: 46px 30px;
+  
+}
+
+.nav-item{
+  padding-right: 50px;
+  text-decoration:none;
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+.nav-item:hover{
+  color: var(--light-green);
+  transition: color ease-in;
+}
+
+.nav-item:active{
+  color: var(--light-green);
+}
+
+
+
+/* Image Slider */
+
+.slider{
+  position:relative;
+  height:70%;
+  width:85%;
+  background-color:#fff;
+  top:15%;
+  bottom: 0;
+  left:0;
+  border-top-right-radius:10px;
+ overflow: hidden;
+}
+
+.slider img{
+    height:100%;
+    width: 100%;
+    color: rgba(#000, .16);
+    box-shadow: 0 0 10px 10px #ebebeb inset, 0 0 30px 20px #ebebeb inset, 0 0 50px 30px #ebebeb inset;
+    background-position: center;
+    background-size: 100%;
+    z-index: -1;
+    opacity: .8;
+    border-top-right-radius:10px;
+    box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+              0 20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+              0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =================================================================================
+                    Styling of Main Body starts
+   ================================================================================= */
+
+/* Statistics Display */
+.statistics{
+    background-color: var(--dark-green);
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-item{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 20% 20% 20% 20%;
+    margin-left: 30px;
+}
+
+.status-item span{
+    display: inline-block;
+    color: #fff;
+    line-height: 2.5;
+    padding-right:100px ;
+}
+
+hr{
+    width: 90%;
+    height: 5px;
+    margin: 40px 70px;
+}
+
+.section-title{
+    width:40%;
+  font-family: 'Patua One', cursive;
+  letter-spacing: 4px;
+  font-size: 56px;
+  color: var(--dark-green);
+}
+
+/* ===============================================
+            Campaign Section Styling
+   =============================================== */
+
+.campaign{
+    height: 110vh;
+    padding: 50px 5px 10px 80px;
+    position: relative;
+    margin-top: 30px;
+}
+.campaign p{
+    width: 60%;
+    padding: 20px 10px 20px 10px;
+    line-height: 1.8;
+}
+
+
+.campaign span{
+    position: absolute;
+    top: 78%;
+    right: 250px;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+.campaign span:hover .more-icon{
+    display: inline-block;
+}
+.view-more{
+    color: var(--dark-green);
+    font-weight: bold;
+    text-decoration: none;
+}
+.view-more:hover {
+    text-decoration: underline;
+    color: var(--dark-green);
+    display: inline;
+}
+.more-icon{
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: -10px;
+}
+
+/* Campaign Cards */
+.img-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    width: 70%;
+    top: 35%;
+    left: 5%;
+    height: 50%;
+}
+ 
+.camp1{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    background-color: #fff;
+    height: 50%;
+    width: 20%;
+    border-radius: 6px;
+    box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+}
+
+.camp1 img{
+  width: 100%;
+  height: 80%;
+  padding: 10px 10px;
+  opacity: 1;
+}
+.camp1 p{
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: medium;
+  color: var(--dark-green);
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+.camp2{
+    position: relative;
+    background-color: #fff;
+    height: 95%;
+    width: 85%;
+    border-radius: 6px;
+    box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+
+}
+
+.camp2 img{
+  width: 100%;
+  height: 80%;
+  padding: 10px 10px;
+  opacity: 1;
+}
+.camp2 p{
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: medium;
+  color: var(--dark-green);
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+
+
+
+
+/* ===============================================
+            About Us Section Styling
+   =============================================== */
+
+.about{
+    height:90vh;
+    padding: 50px 5px 10px 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.text-container{
+  background-color: #fff;
+  height: max-content;
+  padding: 20px 70px;
+  width: 50%;
+  border-radius: 5px;
+  margin-top: 120px;
+  margin-left: 38%;
+}
+
+.text-container.section-title{
+  padding-left: 30px;
+}
+
+.text-container p{
+  width: 100%;
+    padding: 20px 10px 20px 30px;
+    line-height: 1.8;
+}
+
+.text-container span{
+  padding-left: 30px;
+  
+}
+
+.img-wrapper{
+  margin-left: 10%;
+  margin-top: 35px;
+  background-color: grey;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 30%;
+  height: 58%;
+  position: absolute;
+}
+
+.img-wrapper img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+/* =======================
+    Quote Container
+   ======================= */
+
+
+.quote{
+  background-color: var(--dark-green);
+  height: 30vh;
+  margin-top: 45%;
+  position: relative;
+ 
+}
+
+.quote p{
+  width: 60%;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 4px;
+  color: #fff;
+  font-size: 56px;
+  font-family: 'Patua One', cursive;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.quote span{
+  position: absolute;
+  right: 150px;
+  top: 40%;
+}
+
+.donate2{
+  height: 40px;
+  width: max-content;
+  background-color: var(--yellow);
+  color: var(--dark-green);
+  border:0;
+  padding: 15px;
+  line-height: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: transform ease-in-out;
+}
+.donate2:hover{
+  transform: scale(0.95);
+}
+
+
+/* ==========================================================================
+                  Footer 
+   ========================================================================== */
+
+   footer {
+    margin-top: 100px;
+  }
+
+  footer h2{
+    font-family: 'Patua One', cursive;
+  }
+  footer a {
+    font-size: 14px;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color: black;
+  }
+  footer a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  .copy {
+    font-size: 12px;
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 1px  solid black;
+    letter-spacing: 1.5px;
+  }
+  .subscribe{
+    border: 0;
+    height: 40px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+  }
+
+  #contact-icons{
+    padding-right: 20px;
+  }
+
+
+  .footer-middle {
+    padding-top: 2em;
+  }
+  /*SOCİAL İCONS*/
+  /* footer social icons */
+  ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  /* footer social icons */
+  .social-network a.icoFacebook:hover {
+    background-color: #3b5998;
+  }
+  .social-network a.icoInstagram:hover {
+    background-color: #e1306c;
+  }
+  .social-network a.icoYoutube:hover {
+    background-color: #ff0000;
+  }
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i,
+  .social-network a.icoInstagram:hover i,
+  .social-network a.icoYoutube:hover i {
+    color: #fff;
+  }
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44bcdd;
+  }
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .social-circle i {
+    color: var(--dark-green);
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  .social-network a {
+    background-color: #f9f9f9;
+  }
+ 
