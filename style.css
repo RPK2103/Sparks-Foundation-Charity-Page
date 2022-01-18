@@ -465,12 +465,12 @@ hr {
 
 .donate2 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--dark-green);
 }
 
 .donate2 a:hover {
   text-decoration: none;
-  color: #fff;
+  color: var(--dark-green);
 }
 
 
