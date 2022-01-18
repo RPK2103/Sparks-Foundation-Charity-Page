@@ -53,18 +53,6 @@ header {
   animation-fill-mode: forwards;
 }
 
-@keyframes movedown {
-  0% {
-    transform: translateY(-100px);
-    visibility: visible;
-  }
-
-  100% {
-    transform: translateY(0);
-    visibility: visible;
-  }
-}
-
 .logo img {
   height: 100px;
   width: 100px;
@@ -77,19 +65,6 @@ header {
   visibility: hidden;
   animation-fill-mode: forwards;
 }
-
-@keyframes moveright {
-  0% {
-    transform: translateX(-100px);
-    visibility: visible;
-  }
-
-  100% {
-    transform: translateX(0);
-    visibility: visible;
-  }
-}
-
 
 
 .caption-title {
@@ -121,6 +96,16 @@ header {
   font-weight: bold;
   letter-spacing: 3px;
   transition: transform ease-in-out;
+}
+
+.donate1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.donate1 a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .donate1:hover {
@@ -186,18 +171,6 @@ button:active {
   animation-delay: 4s;
   visibility: hidden;
   animation-fill-mode: forwards;
-}
-
-@keyframes zoomin {
-  0% {
-    transform: scale(0.5);
-    visibility: visible;
-  }
-
-  100% {
-    transform: scale(1);
-    visibility: visible;
-  }
 }
 
 .slider img {
@@ -490,6 +463,16 @@ hr {
   transform: scale(0.95);
 }
 
+.donate2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.donate2 a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 
 /* ==========================================================================
                   Footer 
@@ -627,6 +610,52 @@ ul.social-network li {
 .social-network a {
   background-color: #f9f9f9;
 }
+
+
+
+
+
+/* =================================================================================
+                    Animation Properties
+   ================================================================================= */
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+
+@keyframes moveright {
+  0% {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0.5);
+    visibility: visible;
+  }
+
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
 
 div {
 
