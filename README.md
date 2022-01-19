@@ -15,17 +15,17 @@ Deployed website - [Helping Hands Charity Association](https://helpinghandschari
 >Created a simple website where payment gateway is integrated. There is a simple donate button on homepage, on clicking the donate button, the user will land on the payment page where user can select the amount to be paid and the payment type that includes Credit Card, Netbanking, UPI and Debit Card. On successful payment an invoice will be generated on a new page regarding completion of the payment and an email would be sent regarding the same. The payment integration was made with **RazorPay Payment System**.
 
 #### Screenshots
-![Example screenshot](./img/Screenshot1.PNG)<br>
+![Example screenshot](./img/Screenshot1.png)<br>
 
-![Example screenshot](./img/Screenshot2.PNG)<br>
+![Example screenshot](./img/Screenshot2.png)<br>
 
-![Example screenshot](./img/Screenshot3.PNG)<br>
+![Example screenshot](./img/Screenshot3.png)<br>
 
-![Example screenshot](./img/Screenshot4.PNG)<br>
+![Example screenshot](./img/Screenshot4.png)<br>
 
-![Example screenshot](./img/Screenshot5.PNG)<br>
+![Example screenshot](./img/Screenshot5.png)<br>
 
-![Example screenshot](./img/Screenshot6.PNG)
+![Example screenshot](./img/Screenshot6.png)
 
 #### Technologies Used
 * HTML5
