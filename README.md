@@ -5,7 +5,7 @@
 This repository contains the tasks I completed while working as an intern for [The Sparks Foundation](https://www.thesparksfoundationsingapore.org/).
 
 - **Internship Category** - Web Development and Designing
-- **Internship Duration** - 1 Month ( January-2022)
+- **Internship Duration** - 1 Month ( January,2022 - February,2022)
 - **Internship Type** - Work from Home
 
 ### Internship Task- Payment Gateway Integration
